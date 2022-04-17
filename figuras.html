@@ -5,9 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de figuras geometricas</title>
+    <link rel="stylesheet" href="./figuras.css">
 </head>
 <body>
-    <h1> Calculadora de figuras geometricas </h1>
+    <header>
+        <h1> Figuras Geometricas </h1>
+    </header>
+    <main class="principal">
+        <section class="conteiner">
+            <h2 class="titulo">Calcula el area y perimetro de un cuadrado</h2>
+            <form class="form">
+                <div class="datosCu">
+                <label for="inputCuadrado">
+                    Escribe cuanto mide uno de los lados de tu cuadrado:
+                </label>
+                <input id="inputCuadrado" type="number" placeholder="ejemplo: 5">
+                </div>
+
+                <div class="botones">
+                    <button class="perimetroB" type="button" onclick="calcPerimetroCuadrado()"> Perimetro</button>
+                    <button class="areaB" type="button" onclick="calcAreaCuadrado()">Area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="conteinerT">
+            <h2 class="titulo">Calcula el area y perimetro de un Triangulo</h2>
+            <form class="form">
+                <div class="datos">
+
+                    <div class="izquierdo">
+                <label>
+                    lado Izquierdo: 
+                </label>
+                <input id="inputIz" type="number" placeholder="ejemplo: 5">
+                     </div>
+
+                    <div class="derecho">
+                 <label>
+                      lado Derecho: 
+                 </label>
+                <input id="inputDe" type="number" placeholder="ejemplo: 4">
+                     </div>
+
+                     <div class="base">
+                <label>
+                    Base: 
+                </label>
+                <input id="inputBa" type="number" placeholder="ejemplo: 10">
+                     </div>
+
+                     <div class="altura">
+                <label >
+                    Altura: 
+                </label>
+                <input id="inputAl" type="number" placeholder="ejemplo: 12">
+                      </div>
+                </div>
+                <div class="botones">
+                    <button class="perimetroB" type="button" onclick="calcPerimetroTriangulo()"> Perimetro</button>
+                    <button class="areaB" type="button" onclick="calcAreaTriangulo()">Area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="conteiner">
+            <h2 class="titulo">Calcula el area y perimetro de un circulo</h2>
+            <form class="form">
+                <div class="datosCi">
+                <p>
+                    Escribe cuanto mide el radio:
+                </p>
+                <input id="inputCi" type="number" placeholder="ejemplo: 5">
+                </div>
+
+                <div class="botones">
+                    <button class="perimetroB" type="button" onclick="calcPerimetroCirculo()"> Perimetro</button>
+                    <button class="areaB" type="button" onclick="calcAreaCirculo()">Area</button>
+                </div>
+            </form>
+        </section>     
+    </main>
     <script src="./figuras.js"></script>
     
 </body>
