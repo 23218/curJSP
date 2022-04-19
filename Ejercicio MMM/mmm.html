@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Mediana y Moda</title>
+</head>
+<body>
+    <header>
+        <h1>Promedios</h1>
+    </header>
+    <main>
+        <section class="conteiner">
+            <h2>Media Aritmerica (Promedio)</h2>
+            <form>
+                <label for="valores"> Ingresa un nuevo valor: </label>
+                <input type="number" id="valores">
+
+                <button type="button" id="boton-valores" onclick="agregarValorLista()">Añadir valor a la lista: </button>
+
+                <span id="lista">Tu lista actual es: </span>
+
+                <button type="button" id="boton-calcular" onclick="calcularMediaAritmetica()">Calcular</button>
+
+                <p>Resultado:</p>
+
+                <p id="resultado"> </p>
+            </form>
+        </section>
+
+        <section class="conteiner">
+            <h2>Mediana</h2>
+            <form>
+                <label for="valores-mediana"> Ingresa un nuevo valor: </label>
+                <input type="number" id="valores-mediana">
+
+                <button type="button" id="boton-valores-mediana" onclick="agregarValorListaMediana()">Añadir valor a la lista: </button>
+
+                <span id="lista-mediana">Tu lista actual es: </span>
+
+                <button type="button" id="boton-calcular-mediana" onclick="calcMediana()">Calcular</button>
+
+                <p>Resultado:</p>
+
+                <p id="resultado-mediana"> </p>
+            </form>
+        </section>
+    </main>
+
+    <section class="conteiner">
+        <h2>Moda</h2>
+        <form>
+            <label for="valores-moda"> Ingresa un nuevo valor: </label>
+            <input type="number" id="valores-moda">
+
+            <button type="button" id="boton-valores-moda" onclick="agregarValorListaModa()">Añadir valor a la lista: </button>
+
+            <span id="lista-moda">Tu lista actual es: </span>
+
+            <button type="button" id="boton-calcular-moda" onclick="calcModa()">Calcular</button>
+
+            <p>Resultado:</p>
+
+            <p id="resultado-moda"> </p>
+        </form>
+    </section>
+</main>
+
+    <script src="./mmm.js"></script>
+    
+</body>
+</html>
